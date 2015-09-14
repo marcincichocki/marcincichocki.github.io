@@ -1,0 +1,21 @@
+{
+  "name": "marcincichocki.github.io",
+  "version": "0.0.0",
+  "homepage": "https://github.com/marcincichocki/marcincichocki.github.io",
+  "authors": [
+    "marcincichocki <poczta@marcincichocki.net>"
+  ],
+  "description": "My personal site",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}
