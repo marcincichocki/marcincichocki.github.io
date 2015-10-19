@@ -28,14 +28,14 @@ gulp.task('watch', () => {
 
 
 gulp.task('styles', () => {
-	return gulp.src(`${paths.sass}/style.scss`)
-		.pipe(sourcemaps.init())
-		.pipe(rename('style.min.css'))
-		.pipe(sass().on('error', sass.logError))
-		.pipe(minifyCss())
-		.pipe(sourcemaps.write())
-		.pipe(gulp.dest(paths.css))
-		.pipe(browserSync.stream());
+  return gulp.src(`${paths.sass}/style.scss`)
+    .pipe(sourcemaps.init())
+    .pipe(rename('style.min.css'))
+    .pipe(sass().on('error', sass.logError))
+    .pipe(minifyCss())
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest(paths.css))
+    .pipe(browserSync.stream());
 });
 
 
@@ -46,7 +46,7 @@ gulp.task('styles-bundle', () => {
     `${paths.css}/style.min.css`,
   ];
 
-	return gulp.src(src)
-		.pipe(concat('bundle.min.css'))
-		.pipe(gulp.dest(paths.css));
+  return gulp.src(src)
+    .pipe(concat('bundle.min.css'))
+    .pipe(gulp.dest(paths.css));
 });
