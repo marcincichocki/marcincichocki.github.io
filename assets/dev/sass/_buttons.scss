@@ -1,0 +1,66 @@
+.btn {
+  color: #fff !important;
+}
+
+.btn-mc-outline {
+  border: 2px solid;
+  &:hover {
+    border-color: $yellow-orange;
+    background-color: $yellow-orange;
+  }
+  &.active {
+    border-color: $red-damask;
+    background-color: $red-damask;
+  }
+  &.thin {
+    border-width: 1px;
+  }
+}
+
+
+.btn-mc-primary {
+  background-color: $yellow-orange;
+  &:hover {
+    background-color: $red-damask;
+  }
+}
+
+
+
+.floating-button {
+  font-size: 32px;
+
+  position: fixed;
+  z-index: map-get($z-index, "menu-button");
+  right: 5px;
+  bottom: 5px;
+
+  display: flex;
+
+  width: 2em;
+  height: 2em;
+
+  color: #fff;
+  border-radius: 50%;
+  background: $yellow-orange;
+  box-shadow: 0 3px 10px -3px #000;
+
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    text-decoration: none;
+
+    color: #fff;
+  }
+  &.active {
+    background-color: $red-damask;
+  }
+  > .icon {
+    font-size: 1em;
+
+    animation: .3s toggle-menu;
+  }
+  > .hidden {
+    display: none;
+  }
+}

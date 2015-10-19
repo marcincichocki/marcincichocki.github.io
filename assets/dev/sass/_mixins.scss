@@ -1,0 +1,36 @@
+@mixin anchor-secondary {
+  a {
+    text-decoration: none !important;
+
+    color: $silver-chalice;
+    border-bottom: 1px dotted darken($silver-chalice, 10);
+    &:hover {
+      color: #fff;
+      border-bottom: 1px solid #fff;
+    }
+  }
+}
+
+
+@mixin anchor-primary {
+  a {
+    text-decoration: none;
+
+    color: $yellow-orange;
+    &:hover {
+      text-decoration: underline;
+
+      color: $red-damask;
+    }
+  }
+}
+
+
+@mixin keyframes($animationName) {
+  @keyframes #{$animationName} {
+    @content;
+  }
+  @-webkit-keyframes #{$animationName} {
+    @content;
+  }
+}

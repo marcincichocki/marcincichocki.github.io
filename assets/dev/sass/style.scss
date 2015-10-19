@@ -1,0 +1,44 @@
+/**
+ * Main scss file.
+ *
+ * Created by Marcin Cichocki
+ *
+ */
+
+
+
+// import everything
+@import
+  // import external font "Lato"
+  url(https://fonts.googleapis.com/css?family=Lato:700,300),
+
+  // sass
+
+
+  // variables
+  "variables",
+
+  // mixins
+  "mixins",
+
+  // keyframes
+  "animations",
+
+  // project defaults
+  "defaults",
+
+  // custom icons
+  "icons",
+
+  // custom prject button
+  "buttons",
+
+  // content
+  "main-header",
+  "section",
+  "projects",
+  "form",
+  "footer",
+
+  // styles for large screen(desktop and up)
+  "large-screen";

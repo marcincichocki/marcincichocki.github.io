@@ -1,0 +1,15 @@
+@include keyframes("toggle-menu") {
+  0% {
+    font-size: 0;
+
+    opacity: 0;
+  }
+  90% {
+    font-size: 1.2em;
+  }
+  100% {
+    font-size: 1em;
+
+    opacity: 1;
+  }
+}
