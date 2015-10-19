@@ -4,7 +4,6 @@ import rename      from 'gulp-rename';
 import sass        from 'gulp-sass';
 import minifyCss   from 'gulp-minify-css';
 import concat      from 'gulp-concat';
-import uglify      from 'gulp-uglify';
 import browserSync from 'browser-sync';
 
 const paths = {
