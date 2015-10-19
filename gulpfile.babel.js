@@ -19,11 +19,11 @@ const paths = {
 gulp.task('default', ['watch']);
 
 gulp.task('watch', () => {
-	browserSync({ server: { baseDir: './' }});
+  browserSync({ server: { baseDir: './' }});
 
-	gulp.watch(`${paths.sass}/**/*.scss`, ['styles']);
-	gulp.watch(`${paths.jsx}/**/*.js`).on('change', browserSync.reload);
-	gulp.watch('./index.html').on('change', browserSync.reload);
+  gulp.watch(`${paths.sass}/**/*.scss`, ['styles']);
+  gulp.watch(`${paths.jsx}/**/*.js`).on('change', browserSync.reload);
+  gulp.watch('./index.html').on('change', browserSync.reload);
 });
 
 
