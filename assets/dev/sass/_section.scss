@@ -27,6 +27,6 @@
 .section-header,
 .section-content,
 .section-footer {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: $xs-section-padding;
+  padding-right: $xs-section-padding;
 }

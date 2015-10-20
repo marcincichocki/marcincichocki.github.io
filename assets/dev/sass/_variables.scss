@@ -9,6 +9,13 @@ $lg-padding-top: 5rem;
 // font size of carousel
 $carousel-font-size: 1.5rem;
 
+// sections padding(left and right)
+// in fact its for rows inside sections:
+// .section-header, .section-content, .section-footer
+// but that way it is easier to reason about it
+$xs-section-padding: 1rem;
+$lg-section-padding: 5rem;
+
 
 /* colors */
 $gallery: #efefef;
