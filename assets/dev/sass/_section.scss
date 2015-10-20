@@ -1,15 +1,9 @@
-.content {
-  > section {
-    margin-top: 20px;
-  }
-}
-
 .section-header {
   text-align: center;
-  > small {
+  small {
     color: $silver-chalice;
   }
-  > h1 {
+  h1 {
     font-size: 3rem !important;
     font-weight: bold;
     line-height: .7;
@@ -18,7 +12,7 @@
 
     color: $bismark;
   }
-  > .line {
+  .line {
     display: block;
 
     width: 100%;
@@ -27,4 +21,12 @@
 
     background-color: $silver-chalice;
   }
+}
+
+
+.section-header,
+.section-content,
+.section-footer {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }

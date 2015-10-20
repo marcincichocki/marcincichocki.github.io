@@ -21,19 +21,24 @@
         <!-- main header -->
         <header class="col-lg-4 main-header">
           <section class="row">
-            <div class="col-xs-12 website-logo">
+            <div class="col-xs-12">
               <div class="jumbotron jumbotron-fluid">
-                <a href="/">
+
+                <!-- logo -->
+                <a class="website-logo" href="/">
                   <img class="img-circle" src="assets/img/avatar-sm.png" alt="avatar">
                 </a>
+
+                <!-- brand mobile -->
                 <h1 class="display-2">marcin<br><strong>cichocki</strong></h1>
                 <p class="hidden-lg-up lead"><strong>forntend</strong> done right</p>
+
+                <!-- brand desktop(carousel) -->
                 <div class="hidden-md-down pull-right" id="carousel">
                   <ul></ul>
-                  <p>
-                    <span>&nbsp;done right</span>
-                  </p>
+                  <p><span>&nbsp;done right</span></p>
                 </div>
+
               </div>
             </div>
             <nav class="col-xs-12">
@@ -68,135 +73,139 @@
 
 
         <!-- page content -->
-        <main class="col-lg-8 col-lg-offset-4 content">
+        <main class="col-lg-8 col-lg-offset-4">
           <!-- section#projects -->
           <section class="row" id="projects">
-            <!-- section.section-header -->
-            <header class="col-md-10 col-md-offset-1 section-header">
-              <small class="h5 center-block">my work</small>
-              <h1>projects</h1>
-              <span class="line"></span>
-            </header>
 
-            <!-- section:article.project -->
-            <article class="col-md-10 col-md-offset-1 project">
-              <!-- project header -->
-              <header class="row">
-                <!-- project-name -->
+            <div class="col-xs-12">
+              <!-- .section-header -->
+              <header class="row section-header">
                 <div class="col-xs-12">
-                  <h2 class="project-name">pizza builder</h2>
+                  <small class="h5 center-block">my work</small>
+                  <h1>projects</h1>
+                  <span class="line"></span>
                 </div>
               </header>
-              <!-- project content -->
-              <section class="row">
-                <div class="col-sm-5">
-                  <figure class="figure img-responsive">
-                    <!-- project image -->
-                    <img class="project-image img-rounded" src="assets/img/project1.png" alt="pizza builder main screen" title="pizza builder main screen">
-                    <!-- project caption -->
-                    <figcaption class="figure-caption">Create your own pizza!</figcaption>
-                  </figure>
-                  <!-- project buttonss -->
-                  <div class="project-buttons">
-                    <a class="btn btn-block btn-mc-primary" href="#"><i class="icon icon-link"></i>&nbsp;demo</a>
-                    <a class="btn btn-block btn-mc-primary" href="#"><i class="icon icon-github"></i>&nbsp;source</a>
-                  </div>
-                </div>
-                <article class="col-sm-7 project-description">
-                  <!-- description -->
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus nobis consectetur, cum non necessitatibus obcaecati.</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias delectus enim sequi numquam excepturi, corrupti!</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure distinctio iste vitae. Sunt, suscipit, perspiciatis.</p>
+
+              <!-- projects -->
+              <section class="row section-content">
+                <article class="col-xs-12">
+                  <header class="row">
+                    <div class="col-xs-12">
+                      <h2 class="project-name">pizza builder</h2>
+                    </div>
+                  </header>
+                  <section class="row">
+                    <div class="col-sm-5">
+                      <figure class="figure img-responsive">
+                        <img class="project-image img-rounded" src="assets/img/project1.png" alt="pizza builder main screen" title="pizza builder main screen">
+                        <figcaption class="figure-caption">Create your own pizza!</figcaption>
+                      </figure>
+                      <div class="project-buttons">
+                        <a class="btn btn-block btn-mc-primary" href="#"><i class="icon icon-link"></i>&nbsp;demo</a>
+                        <a class="btn btn-block btn-mc-primary" href="#"><i class="icon icon-github"></i>&nbsp;source</a>
+                      </div>
+                    </div>
+                    <article class="col-sm-7 project-description">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus nobis consectetur, cum non necessitatibus obcaecati.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias delectus enim sequi numquam excepturi, corrupti!</p>
+                    </article>
+                  </section>
+                </article>
+                <article class="col-xs-12">
+                  <header class="row">
+                    <div class="col-xs-12">
+                      <h2 class="project-name">pizza builder</h2>
+                    </div>
+                  </header>
+                  <section class="row">
+                    <div class="col-sm-5">
+                      <figure class="figure img-responsive">
+                        <img class="project-image img-rounded" src="assets/img/project2.png" alt="pizza builder main screen" title="pizza builder main screen">
+                        <figcaption class="figure-caption">Create your own pizza!</figcaption>
+                      </figure>
+                      <div class="project-buttons">
+                        <a class="btn btn-block btn-mc-primary" href="#"><i class="icon icon-link"></i>&nbsp;demo</a>
+                        <a class="btn btn-block btn-mc-primary" href="#"><i class="icon icon-github"></i>&nbsp;source</a>
+                      </div>
+                    </div>
+                    <article class="col-sm-7 project-description">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus nobis consectetur, cum non necessitatibus obcaecati.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias delectus enim sequi numquam excepturi, corrupti!</p>
+                    </article>
+                  </section>
                 </article>
               </section>
-            </article>
-            <!-- section:article.project -->
-            <article class="col-md-10 col-md-offset-1 project">
-              <!-- project header -->
-              <header class="row">
-                <!-- project-name -->
+              <footer class="row section-footer">
                 <div class="col-xs-12">
-                  <h2 class="project-name">todo</h2>
+                  <p class="lead">Looking for more?</p>
+                  <a class="btn btn-lg btn-mc-primary" href="">Check my github&nbsp;<i class="icon icon-github"></i></a>
                 </div>
-              </header>
-              <!-- project content -->
-              <section class="row">
-                <div class="col-sm-5">
-                  <figure class="figure img-responsive">
-                    <!-- project image -->
-                    <img class="project-image img-rounded" src="assets/img/project2.png" alt="pizza builder main screen" title="pizza builder main screen">
-                    <!-- project caption -->
-                    <figcaption class="figure-caption">You have to remember a lot of things?</figcaption>
-                  </figure>
-                  <!-- project buttonss -->
-                  <div class="project-buttons">
-                    <a class="btn btn-block btn-mc-primary" href="#"><i class="icon icon-link"></i>&nbsp;demo</a>
-                    <a class="btn btn-block btn-mc-primary" href="#"><i class="icon icon-github"></i>&nbsp;source</a>
-                  </div>
-                </div>
-                <article class="col-sm-7 project-description">
-                  <!-- description -->
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus nobis consectetur, cum non necessitatibus obcaecati.</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias delectus enim sequi numquam excepturi, corrupti!</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure distinctio iste vitae. Sunt, suscipit, perspiciatis.</p>
-                </article>
-              </section>
-            </article>
+              </footer>
+            </div>
           </section>
 
           <!-- section#contact -->
           <section class="row" id="contact">
-            <!-- section.section-header -->
-            <header class="col-md-10 col-md-offset-1 section-header">
-              <small class="h5 center-block">have a question?</small>
-              <h1>contact</h1>
-              <span class="line"></span>
-            </header>
-            <section class="col-md-10 col-md-offset-1">
-              <form action="">
-                <div class="form-group row">
-                  <label class="p-a-0 control-label col-sm-2" for="name">name</label>
-                  <div class="col-sm-10">
-                    <input class="form-control" name="name" tabindex="1" type="text" id="name" placeholder="Name">
-                  </div>
+            <div class="col-xs-12">
+              <header class="row section-header">
+                <div class="col-xs-12">
+                  <small class="h5 center-block">have a question?</small>
+                  <h1>contact</h1>
+                  <span class="line"></span>
                 </div>
-                <div class="form-group row">
-                  <label class="p-a-0 control-label col-sm-2" for="email">email</label>
-                  <div class="col-sm-10">
-                    <input class="form-control" name="email" tabindex="2" type="email" id="email" placeholder="Email">
-                  </div>
+              </header>
+
+              <section class="row section-content">
+                <div class="col-xs-12">
+                  <form action="">
+                    <div class="form-group row">
+                      <label class="p-a-0 control-label col-sm-2" for="name">name</label>
+                      <div class="col-sm-10">
+                        <input class="form-control" name="name" tabindex="1" type="text" id="name" placeholder="Name">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="p-a-0 control-label col-sm-2" for="email">email</label>
+                      <div class="col-sm-10">
+                        <input class="form-control" name="email" tabindex="2" type="email" id="email" placeholder="Email">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="p-a-0 control-label col-sm-2" for="name">subject</label>
+                      <div class="col-sm-10">
+                        <input class="form-control" name="subject" tabindex="3" type="text" id="subject" placeholder="Subject">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="p-a-0 control-label col-sm-2" for="message">message</label>
+                      <div class="col-sm-10">
+                        <textarea class="form-control" name="message" tabindex="4" id="message" placeholder="Message"></textarea>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <div class="col-sm-offset-2 col-sm-10">
+                        <input class="btn btn-mc-primary" tabindex="5" type="submit" value="Send">
+                      </div>
+                    </div>
+                  </form>
                 </div>
-                <div class="form-group row">
-                  <label class="p-a-0 control-label col-sm-2" for="name">subject</label>
-                  <div class="col-sm-10">
-                    <input class="form-control" name="subject" tabindex="3" type="text" id="subject" placeholder="Subject">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label class="p-a-0 control-label col-sm-2" for="message">message</label>
-                  <div class="col-sm-10">
-                    <textarea class="form-control" name="message" tabindex="4" id="message" placeholder="Message"></textarea>
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-sm-offset-2 col-sm-10">
-                    <input class="btn btn-mc-primary" tabindex="5" type="submit" value="Send">
-                  </div>
-                </div>
-              </form>
-            </section>
+              </section>
+            </div>
           </section>
 
           <!-- section#about -->
           <section class="row" id="about">
+            <div class="col-xs-12">
             <!-- section.section-header -->
-            <header class="col-md-10 col-md-offset-1 section-header">
-              <small class="h5 center-block">who am I?</small>
-              <h1>about</h1>
-              <span class="line"></span>
-            </header>
-            <section class="col-md-10 col-md-offset-1">
-              <div class="row">
+              <header class="row section-header">
+                <div class="col-xs-12">
+                  <small class="h5 center-block">who am I?</small>
+                  <h1>about</h1>
+                  <span class="line"></span>
+                </div>
+              </header>
+              <section class="row section-content">
                 <div class="col-sm-4">
                   <img class="img-responsive img-rounded center-block " src="assets/img/avatar-sm.png" alt="That is me">
                 </div>
@@ -205,14 +214,14 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil officia, doloremque nisi eum animi similique debitis, adipisci rem quam deserunt ab quibusdam suscipit consequuntur laudantium sunt modi cupiditate quisquam repellat. <a href="#">asdasd</a> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores iconcere, expedita ipsum dolorem dignissimos odio natus accusamus eum! Animi quaerat dignissimos voluptatem fugit voluptas dolorem, necessitatibus, enim harum corporis veniam.
                   </p>
                 </div>
-              </div>
-            </section>
+              </section>
+            </div>
           </section>
 
           <!-- footer -->
           <footer class="row">
-            <div class="col-md-10 col-md-offset-1">
-              <div class="row">
+            <div class="col-xs-12">
+              <div class="row section-content">
                 <div class="col-sm-6">
                   <h2>Lorem</h2>
                   <address>
