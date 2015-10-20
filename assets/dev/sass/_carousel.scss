@@ -1,0 +1,45 @@
+$carousel-font-size: 1.5rem;
+
+// FIXME: don't use id
+#carousel {
+  font-size: $carousel-font-size;
+  line-height: 1;
+  margin-bottom: 20px;
+  > ul {
+    position: relative;
+    overflow: hidden;
+    height: $carousel-font-size;
+    margin: 0;
+    padding: 0;
+    float: left;
+
+    > li {
+      visibility: hidden;
+      text-transform: uppercase;
+      list-style: none;
+      width: 100%;
+      font-weight: bold;
+
+      &.active {
+        animation: .3s show;
+        position: absolute;
+        visibility: visible;
+        bottom: 0;
+      }
+    }
+  }
+
+  > p {
+    margin: 0;
+    float: left;
+  }
+}
+
+@keyframes show {
+  from {
+    bottom: -100%;
+  }
+  to {
+    bottom: 0;
+  }
+}

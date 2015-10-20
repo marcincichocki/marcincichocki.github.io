@@ -7,6 +7,45 @@ class App {
     this.$header = $('.main-header');
 
     this.animate = false;
+    this.interval = null;
+    this.isRunning = false;
+  }
+
+  carousel() {
+    const $ul = $('#carousel').find('ul');
+
+    // play animation on desktops only
+    if (this.animate && !this.isRunning) {
+      this.isRunning = true;
+
+      const options = [
+        'front end',
+        'javascript',
+        'angular',
+        'jquery',
+        'bootstrap',
+      ];
+
+      options.forEach(value => {
+        $('<li>', { text: value }).appendTo($ul);
+      });
+
+      const $first = $('ul').find('li:first').addClass('active');
+      let $next = $first.next();
+
+      this.interval = setInterval(() => {
+        $ul.find('.active').removeClass('active');
+        $next = $next.addClass('active').next();
+
+        if (!$next.length) $next = $first;
+      }, 3000);
+    } else if (!this.animate) {
+      this.isRunning = false;
+      $ul.empty();
+      clearInterval(this.interval);
+    }
+
+    return this;
   }
 
   updateBackground() {
@@ -32,7 +71,11 @@ class App {
     const self = this;
 
 
-    $(window).on('resize', () => self.toggleAnimation() );
+    $(window).on('resize', () => {
+      self
+        .toggleAnimation()
+        .carousel();
+    });
 
     self.$anchors.on('click', function(event) {
       event.preventDefault();

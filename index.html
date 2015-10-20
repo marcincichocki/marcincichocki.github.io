@@ -8,11 +8,11 @@
     <title>Marcin Cichocki's personal website</title>
 
     <!-- development(still bower ( ͡° ʖ̯ ͡°) ) -->
-    <!-- <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.min.css"> -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
 
     <!-- production -->
-    <link rel="stylesheet" href="assets/css/bundle.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/bundle.min.css"> -->
   </head>
   <body>
     <div class="container-fluid">
@@ -27,7 +27,13 @@
                   <img class="img-circle" src="assets/img/avatar-sm.png" alt="avatar">
                 </a>
                 <h1 class="display-2">marcin<br><strong>cichocki</strong></h1>
-                <p class="lead"><strong>forntend</strong> done right</p>
+                <p class="hidden-lg-up lead"><strong>forntend</strong> done right</p>
+                <div class="hidden-md-down pull-right" id="carousel">
+                  <ul></ul>
+                  <p>
+                    <span>&nbsp;done right</span>
+                  </p>
+                </div>
               </div>
             </div>
             <nav class="col-xs-12">
@@ -235,11 +241,11 @@
     </a>
 
     <!-- development(jspm is awsome! (⌐ ͡■ ͜ʖ ͡■) ) -->
-    <!-- <script src="jspm_packages/system.js"></script>
+    <script src="jspm_packages/system.js"></script>
     <script src="config.js"></script>
-    <script>System.import('assets/dev/jsx/main.js')</script> -->
+    <script>System.import('assets/dev/jsx/main.js')</script>
 
     <!-- production -->
-    <script src="assets/js/bundle.min.js"></script>
+    <!-- <script src="assets/js/bundle.min.js"></script> -->
   </body>
 </html>
