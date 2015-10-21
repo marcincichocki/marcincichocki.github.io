@@ -5,7 +5,6 @@ import App from './App';
 
 App
   .toggleAnimation()
-  .carousel()
   .updateBackground()
   .events();
 
