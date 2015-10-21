@@ -3,17 +3,9 @@
     padding-top: $lg-padding-top;
   }
 
-
-  .jumbotron {
-    padding: $lg-padding-top 0 0 !important;
-
-    > h1 {
-      font-size: 4.5rem;
-    }
-  }
-
-  .main-header {
+  aside {
     position: fixed !important;
+    padding-top: $lg-padding-top;
 
     display: block;
 
@@ -21,7 +13,7 @@
 
     background-position-y: 0;
     background-size: auto 150%;
-    > section, > footer {
+    > header, > footer {
       position: absolute;
       z-index: 1;
       right: 40px;
@@ -35,9 +27,8 @@
 
       display: block;
 
-      padding: 0 .9375rem;
-
       transform: none;
+      padding: 0;
 
       background-color: transparent;
       > .btn {

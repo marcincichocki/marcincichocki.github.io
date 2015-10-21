@@ -1,37 +1,34 @@
-
-
-// FIXME: don't use id
 #carousel {
-  font-size: $carousel-font-size;
-  line-height: 1;
-  margin-bottom: 20px;
-  > ul {
-    position: relative;
-    overflow: hidden;
-    height: $carousel-font-size;
-    margin: 0;
-    padding: 0;
-    float: left;
-
-    > li {
-      visibility: hidden;
-      text-transform: uppercase;
-      list-style: none;
-      width: 100%;
-      font-weight: bold;
-
-      &.active {
-        animation: .3s show;
-        position: absolute;
-        visibility: visible;
-        bottom: 0;
-      }
-    }
+  > span {
+    display: none;
   }
+  > .active {
+    font-weight: bold;
+    font-weight: bold;
 
+    position: absolute;
+    right: 100%;
+
+    display: inline;
+
+    animation: .3s show;
+    white-space: nowrap;
+  }
+  &:empty::before {
+    font-weight: bold;
+
+    content: attr(data-text);
+  }
+}
+
+.carousel-wrapper {
+  overflow: hidden;
   > p {
+    position: relative;
+
+    display: inline-block;
+
     margin: 0;
-    float: left;
   }
 }
 
