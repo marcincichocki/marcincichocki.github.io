@@ -1,10 +1,11 @@
-import gulp        from 'gulp';
-import sourcemaps  from 'gulp-sourcemaps';
-import rename      from 'gulp-rename';
-import sass        from 'gulp-sass';
-import minifyCss   from 'gulp-minify-css';
-import concat      from 'gulp-concat';
-import browserSync from 'browser-sync';
+import gulp         from 'gulp';
+import sourcemaps   from 'gulp-sourcemaps';
+import rename       from 'gulp-rename';
+import sass         from 'gulp-sass';
+import autoprefixer from 'gulp-autoprefixer';
+import minifyCss    from 'gulp-minify-css';
+import concat       from 'gulp-concat';
+import browserSync  from 'browser-sync';
 
 const paths = {
   bower : './bower_components',
@@ -31,6 +32,7 @@ gulp.task('styles', () => {
     .pipe(sourcemaps.init())
     .pipe(rename('style.min.css'))
     .pipe(sass().on('error', sass.logError))
+    .pipe(autoprefixer({ browsers: ['last 2 versions'] }))
     .pipe(minifyCss())
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(paths.css))
