@@ -5,46 +5,61 @@
 
   aside {
     position: fixed !important;
-    padding-top: $lg-padding-top;
 
-    display: block;
+    flex-direction: column;
+
+    padding-top: $lg-padding-top;
 
     text-align: right;
 
     background-position-y: 0;
     background-size: auto 150%;
-    > header, > footer {
-      position: absolute;
-      z-index: 1;
-      right: 40px;
+
+    justify-content: space-between;
+    > header {
+      align-self: flex-start;
     }
     > footer {
-      bottom: 0;
+      align-self: flex-end;
+      @include anchor-secondary;
     }
-    nav {
-      position: static;
-      z-index: auto;
-
-      display: block;
-
-      transform: none;
-      padding: 0;
-
-      background-color: transparent;
-      > .btn {
-        margin: 0;
-      }
-    }
-
   }
+
+  .website-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .website-navigation {
+    position: static;
+    z-index: auto;
+
+    display: block;
+
+    height: auto;
+    padding: 0;
+
+    transform: none;
+
+    background-color: transparent;
+  }
+
+  .external-links {
+    margin-bottom: 10px;
+  }
+
   .section-header,
   .section-content,
   .section-footer {
-    padding-left: $lg-section-padding;
     padding-right: $lg-section-padding;
+    padding-left: $lg-section-padding;
   }
 }
 
+@media (min-width: 75rem) {
+  .website-subtitle {
+    font-size: 1.8rem;
+  }
+}
 
 @media (min-width: 34rem) {
   form label {
