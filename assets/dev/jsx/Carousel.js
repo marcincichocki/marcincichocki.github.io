@@ -1,16 +1,10 @@
 class Carousel {
-  constructor(delay = 3000) {
-    this.intervalId = null;
+  constructor(options, delay = 3000) {
+    this.options = options;
     this.delay = delay;
-    this.isRunning = false;
 
-    this.options = [
-      'front end',
-      'javascript',
-      'angular',
-      'jquery',
-      'bootstrap',
-    ];
+    this.intervalId = null;
+    this.isRunning = false;
 
     this.$carousel = $('#carousel');
     this.$first = null;
@@ -47,4 +41,10 @@ class Carousel {
   }
 }
 
-export default new Carousel();
+export default new Carousel([
+  'front end',
+  'javascript',
+  'angular',
+  'jquery',
+  'bootstrap',
+]);
