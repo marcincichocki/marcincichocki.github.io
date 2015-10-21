@@ -1,4 +1,4 @@
-/* size */
+/* sizes */
 
 // height of navbar on mobile devices(xs -> lg:hidden)
 $xs-nav-height: 80px;
@@ -6,10 +6,18 @@ $xs-nav-height: 80px;
 // free space between top of the window and content in header and main
 $lg-padding-top: 5rem;
 
+// font size of carousel
+$carousel-font-size: 1.5rem;
+
+// sections padding(left and right)
+// in fact its for rows inside sections:
+// .section-header, .section-content, .section-footer
+// but that way it is easier to reason about it
+$xs-section-padding: 1rem;
+$lg-section-padding: 5rem;
 
 
 /* colors */
-
 $gallery: #efefef;
 $silver-chalice: #aaa;
 $ebony-clay: #2f3c4f;
@@ -18,9 +26,9 @@ $yellow-orange: #fbb040;
 $red-damask: #de703c;
 
 
+/* maps */
 
-/* z-index map */
-
+// z-index map
 $z-index: (
   nav: 2,
   menu-button: 3

@@ -3,50 +3,63 @@
     padding-top: $lg-padding-top;
   }
 
-
-  .jumbotron {
-    padding: $lg-padding-top 0 0 !important;
-
-    > h1 {
-      font-size: 4.5rem;
-    }
-  }
-
-  .main-header {
+  aside {
     position: fixed !important;
 
-    display: block;
+    flex-direction: column;
+
+    padding-top: $lg-padding-top;
 
     text-align: right;
 
     background-position-y: 0;
     background-size: auto 150%;
-    > section, > footer {
-      position: absolute;
-      z-index: 1;
-      right: 40px;
+
+    justify-content: space-between;
+    > header {
+      align-self: flex-start;
     }
     > footer {
-      bottom: 0;
+      align-self: flex-end;
+      @include anchor-secondary;
     }
-    nav {
-      position: static;
-      z-index: auto;
+  }
 
-      display: block;
+  .website-subtitle {
+    font-size: 1.5rem;
+  }
 
-      padding: 0 .9375rem;
+  .website-navigation {
+    position: static;
+    z-index: auto;
 
-      transform: none;
+    display: block;
 
-      background-color: transparent;
-      > .btn {
-        margin: 0;
-      }
-    }
+    height: auto;
+    padding: 0;
+
+    transform: none;
+
+    background-color: transparent;
+  }
+
+  .external-links {
+    margin-bottom: 10px;
+  }
+
+  .section-header,
+  .section-content,
+  .section-footer {
+    padding-right: $lg-section-padding;
+    padding-left: $lg-section-padding;
   }
 }
 
+@media (min-width: 75rem) {
+  .website-subtitle {
+    font-size: 1.8rem;
+  }
+}
 
 @media (min-width: 34rem) {
   form label {

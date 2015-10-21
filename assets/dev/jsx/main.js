@@ -4,8 +4,8 @@ import App from './App';
 
 
 App
-  .updateBackground()
   .toggleAnimation()
+  .updateBackground()
   .events();
 
 

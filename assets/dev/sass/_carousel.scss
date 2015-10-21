@@ -1,0 +1,42 @@
+#carousel {
+  > span {
+    display: none;
+  }
+  > .active {
+    font-weight: bold;
+    font-weight: bold;
+
+    position: absolute;
+    right: 100%;
+
+    display: inline;
+
+    animation: .3s show;
+    white-space: nowrap;
+  }
+  &:empty::before {
+    font-weight: bold;
+
+    content: attr(data-text);
+  }
+}
+
+.carousel-wrapper {
+  overflow: hidden;
+  > p {
+    position: relative;
+
+    display: inline-block;
+
+    margin: 0;
+  }
+}
+
+@keyframes show {
+  from {
+    bottom: -100%;
+  }
+  to {
+    bottom: 0;
+  }
+}

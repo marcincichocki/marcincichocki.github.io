@@ -1,17 +1,18 @@
 import Utilities from './Utilities';
+import Carousel from './Carousel';
 
 
 class App {
   constructor() {
     this.$anchors = $('.anchor');
-    this.$header = $('.main-header');
+    this.$aside = $('aside');
 
     this.animate = false;
   }
 
   updateBackground() {
     if ( Utilities.isMobile(navigator.userAgent || navigator.vendor || window.opera) ) {
-      this.$header.css({
+      this.$aside.css({
         height: window.innerHeight
       });
     }
@@ -23,6 +24,12 @@ class App {
   toggleAnimation() {
     this.animate = Utilities.isWider();
 
+    if (this.animate) {
+      Carousel.run();
+    } else {
+      Carousel.pause(true);
+    }
+
     return this;
   }
 
@@ -32,7 +39,10 @@ class App {
     const self = this;
 
 
-    $(window).on('resize', () => self.toggleAnimation() );
+    $(window).on('resize', () => {
+      self
+        .toggleAnimation();
+    });
 
     self.$anchors.on('click', function(event) {
       event.preventDefault();
@@ -55,7 +65,7 @@ class App {
       const scrollTop = $(document).scrollTop();
 
       if (self.animate) {
-        self.$header.css({
+        self.$aside.css({
           backgroundPositionY: 100 - Math.round(100 * scrollTop / ( $(document).height() - window.innerHeight ) ) + '%'
         });
       }
