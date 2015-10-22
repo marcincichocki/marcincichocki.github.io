@@ -12,15 +12,14 @@
 
     text-align: right;
 
-    background-position-y: 0;
-    background-size: auto 150%;
+    background-position: 0 0;
+    background-size:
+      auto auto,
+      auto 150%;
 
     justify-content: space-between;
-    > header {
-      align-self: flex-start;
-    }
+    align-items: stretch;
     > footer {
-      align-self: flex-end;
       @include anchor-secondary;
     }
   }
