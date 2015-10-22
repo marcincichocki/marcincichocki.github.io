@@ -66,7 +66,7 @@ class App {
 
       if (self.animate) {
         self.$aside.css({
-          backgroundPositionY: 100 - Math.round(100 * scrollTop / ( $(document).height() - window.innerHeight ) ) + '%'
+          backgroundPosition: `0 ${100 - Math.round(100 * scrollTop / ( $(document).height() - window.innerHeight ) )}%`
         });
       }
 
