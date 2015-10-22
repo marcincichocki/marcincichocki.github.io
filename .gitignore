@@ -3,3 +3,6 @@ bower_components/
 jspm_packages/
 
 .jshintrc
+
+# Only dev. For production use assets/css/bundle.min.css
+assets/css/style.min.css
