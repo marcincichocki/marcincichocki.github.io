@@ -33,6 +33,7 @@
   "jspm": {
     "dependencies": {
       "autosize": "github:jackmoore/autosize@^3.0.13",
+      "jonathantneal/svg4everybody": "github:jonathantneal/svg4everybody@^2.0.0",
       "jquery": "github:components/jquery@^2.1.4"
     },
     "devDependencies": {

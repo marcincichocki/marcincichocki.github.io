@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import autosize from 'autosize';
+import svg4everybody from 'jonathantneal/svg4everybody';
 import App from './App';
 
 
@@ -11,3 +12,6 @@ App
 
 // init autosize
 autosize($('textarea'));
+
+// svg polyfill for Internet Explorer
+svg4everybody();
