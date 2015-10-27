@@ -1,45 +1,12 @@
 @media (min-width: 62rem) {
-  main {
-    padding-top: $lg-padding-top;
-  }
 
   aside {
-    position: fixed !important;
-
-    flex-direction: column;
-
     padding-top: $lg-padding-top;
-
-    text-align: right;
-
-    background-position: 0 0;
-    background-size:
-      auto auto,
-      auto 150%;
-
-    justify-content: space-between;
-    align-items: stretch;
-    > footer {
-      @include anchor-secondary;
-    }
+    transform: none;
   }
 
   .website-subtitle {
-    font-size: 1.5rem;
-  }
-
-  .website-navigation {
-    position: static;
-    z-index: auto;
-
-    display: block;
-
-    height: auto;
-    padding: 0;
-
-    transform: none;
-
-    background-color: transparent;
+    font-size: 1rem;
   }
 
   .external-links {
@@ -56,7 +23,7 @@
 
 @media (min-width: 75rem) {
   .website-subtitle {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 }
 

@@ -4,7 +4,10 @@
 $xs-nav-height: 80px;
 
 // free space between top of the window and content in header and main
+$xs-padding-top: 3rem;
+$xs-padding-bottom: 1rem;
 $lg-padding-top: 5rem;
+$lg-padding-bottom: 0rem;
 
 // font size of carousel
 $carousel-font-size: 1.5rem;
@@ -14,22 +17,37 @@ $carousel-font-size: 1.5rem;
 // .section-header, .section-content, .section-footer
 // but that way it is easier to reason about it
 $xs-section-padding: 1rem;
-$lg-section-padding: 5rem;
+$lg-section-padding: 3rem;
 
+$xs-aside-width: 70vw;
 
 /* colors */
 $gallery: #efefef;
 $silver-chalice: #aaa;
 $ebony-clay: #2f3c4f;
 $bismark: #506f86;
-$yellow-orange: #fbb040;
+/* $yellow-orange: #fbb040; */
+$yellow-orange: #65486F;
 $red-damask: #de703c;
 
+/* new layout colors */
+$font-color-primary: #696969;
+$aside-background-color-primary: #212528;
+$aside-background-color-secondary: darken($aside-background-color-primary, 5%);
+$aside-font-color-primary: #999;
 
+$main-color: #CC7450;
+
+
+$anchor-secondary-border: 1px dotted;
+$anchor-secondary-border-hover: 1px solid;
+
+
+$aside-transition: transform .3s ease-in-out;
 /* maps */
 
 // z-index map
 $z-index: (
-  nav: 2,
+  aside: 2,
   menu-button: 3
 );

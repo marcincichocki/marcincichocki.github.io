@@ -2,35 +2,37 @@
   a {
     text-decoration: none !important;
 
-    color: $silver-chalice;
-    border-bottom: 1px dotted darken($silver-chalice, 10);
+    color: lighten($font-color-primary, 5%);
     &:hover {
-      color: #fff;
-      border-bottom: 1px solid #fff;
+      color: $main-color;
     }
   }
 }
-
 
 @mixin anchor-primary {
   a {
+    transition: .2s all ease-in-out;
     text-decoration: none;
-
-    color: $yellow-orange;
     &:hover {
       text-decoration: underline;
-
-      color: $red-damask;
     }
   }
 }
 
-
-@mixin keyframes($animationName) {
-  @keyframes #{$animationName} {
-    @content;
+@mixin btn-outline {
+  border: 2px solid;
+  &:hover {
+    border-color: #fff;
+    background-color: #fff;
+    color: #000 !important;
   }
-  @-webkit-keyframes #{$animationName} {
-    @content;
+}
+
+@mixin btn-primary {
+  border: 2px solid $main-color;
+  background-color: $main-color;
+  &:hover {
+    border-color: darken($main-color, 10%);
+    background-color: darken($main-color, 10%);
   }
 }

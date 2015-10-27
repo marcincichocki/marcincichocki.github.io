@@ -3,26 +3,12 @@
 }
 
 .btn-mc-outline {
-  border: 2px solid;
-  &:hover {
-    border-color: $yellow-orange;
-    background-color: $yellow-orange;
-  }
-  &.active {
-    border-color: $red-damask;
-    background-color: $red-damask;
-  }
-  &.thin {
-    border-width: 1px;
-  }
+  @include btn-outline;
 }
 
 
 .btn-mc-primary {
-  background-color: $yellow-orange;
-  &:hover {
-    background-color: $red-damask;
-  }
+  @include btn-primary;
 }
 
 
@@ -32,8 +18,8 @@
 
   position: fixed;
   z-index: map-get($z-index, "menu-button");
-  right: 5px;
-  bottom: 5px;
+  left: 10px;
+  top: 10px;
 
   display: flex;
 
@@ -47,6 +33,7 @@
 
   align-items: center;
   justify-content: center;
+  transition: $aside-transition;
   &:hover {
     text-decoration: none;
 
@@ -54,6 +41,7 @@
   }
   &.active {
     background-color: $red-damask;
+    transform: translateX($xs-aside-width);
   }
   > .icon {
     font-size: 1em;

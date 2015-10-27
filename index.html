@@ -19,13 +19,13 @@
       <div class="row">
 
         <!-- main header -->
-        <aside class="col-lg-4">
+        <aside class="col-lg-3">
           <header class="row">
             <div class="col-xs-12">
-              <a href="/"><img class="website-logo img-circle" src="assets/img/avatar-sm.png" alt="logo"></a>
-            </div>
-            <div class="col-xs-12">
-              <h1 class="website-title display-2">marcin<br><strong>cichocki</strong></h1>
+              <div class="clearfix">
+                <a class="pull-right" href="/"><img class="website-logo img-circle" src="assets/img/avatar-sm.png" alt="logo"></a>
+                <h1 class="pull-right website-title h2">marcin<br><strong>cichocki</strong></h1>
+              </div>
               <div class="carousel-wrapper">
                 <p class="website-subtitle">
                   <span data-text="front end" id="carousel"></span>
@@ -33,27 +33,21 @@
                 </p>
               </div>
             </div>
-            <div class="col-xs-12">
-              <nav class="website-navigation">
-                <!-- hack, pls don't hate me -->
-                <a class="anchor btn btn-mc-outline thin" href="#projects">projects</a
-                ><a class="anchor btn btn-mc-outline thin" href="#skills">skills</a
-                ><a class="anchor btn btn-mc-outline thin" href="#contact">contact</a>
-              </nav>
-            </div>
           </header>
-          <footer class="row hidden-md-down">
+          <nav class="row website-navigation">
+            <ul class="col-xs-12">
+              <li class="row"><a href="#home" class="anchor col-xs-12">home</a></li>
+              <li class="row"><a href="#projects" class="anchor col-xs-12">projects</a></li>
+              <li class="row"><a href="#skills" class="anchor col-xs-12">skills</a></li>
+              <li class="row"><a href="#contact" class="anchor col-xs-12">contact</a></li>
+            </ul>
+          </nav>
+          <footer class="row">
             <div class="col-xs-12">
               <nav class="external-links">
-                <a title="Check my samples" href="#">
-                  <i class="icon icon-codepen"></i>&nbsp;Codepen
-                </a>
-                <a title="See what I am working on" href="#">
-                  <i class="icon icon-github"></i>&nbsp;Github
-                </a>
-                <a title="Stay in touch with me" href="https://twitter.com/deskorolkarz">
-                  <i class="icon icon-twitter"></i>&nbsp;Twitter
-                </a>
+                <a title="Check my samples" href="http://codepen.io/Eggy/"><i class="icon icon-codepen"></i></a>
+                <a title="See what I am working on" href="https://github.com/marcincichocki/"><i class="icon icon-github"></i></a>
+                <a title="Stay in touch with me" href="https://twitter.com/deskorolkarz"><i class="icon icon-twitter"></i></a>
               </nav>
             </div>
           </footer>
@@ -62,7 +56,23 @@
 
 
         <!-- page content -->
-        <main class="col-lg-8 col-lg-offset-4">
+        <main class="col-lg-9 col-lg-offset-3">
+
+          <!-- section#home -->
+          <section class="row" id="home">
+            <div class="col-xs-12">
+              <header class="row section-header">
+                <div class="jumbotron">
+                  <h1 class="display-3">Lorem ipsum</h1>
+                  <h1>Lorem ipsum dolor sit amet.</h1>
+                  <p class="lead">
+                    <a href="#projects" class="btn btn-mc-outline btn-lg anchor">Learn more</a>
+                    <a href="#contact" class="btn btn-mc-primary btn-lg anchor">Hire me</a>
+                  </p>
+                </div>
+              </header>
+            </div>
+          </section>
           <!-- section#projects -->
           <section class="row" id="projects">
 
@@ -252,11 +262,11 @@
     </a>
 
     <!-- development(jspm is awsome! (⌐ ͡■ ͜ʖ ͡■) ) -->
-    <!-- <script src="jspm_packages/system.js"></script>
+    <script src="jspm_packages/system.js"></script>
     <script src="config.js"></script>
-    <script>System.import('assets/dev/jsx/main.js')</script> -->
+    <script>System.import('assets/dev/jsx/main.js')</script>
 
     <!-- production -->
-    <script src="assets/js/bundle.min.js"></script>
+    <!-- <script src="assets/js/bundle.min.js"></script> -->
   </body>
 </html>

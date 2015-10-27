@@ -6,13 +6,14 @@ class App {
   constructor() {
     this.$anchors = $('.anchor');
     this.$aside = $('aside');
+    this.$navigation = $('.website-navigation a');
 
     this.animate = false;
   }
 
   updateBackground() {
     if ( Utilities.isMobile(navigator.userAgent || navigator.vendor || window.opera) ) {
-      this.$aside.css({
+      $('#home').css({
         height: window.innerHeight
       });
     }
@@ -58,20 +59,20 @@ class App {
       event.preventDefault();
 
       $(this).toggleClass('active').children().toggleClass('hidden');
-      $('nav').toggleClass('visible');
+      $('body').toggleClass('visible');
     });
 
     $(window).on('scroll', function() {
       const scrollTop = $(document).scrollTop();
 
-      if (self.animate) {
-        self.$aside.css({
-          backgroundPosition: `0 ${100 - Math.round(100 * scrollTop / ( $(document).height() - window.innerHeight ) )}%`
-        });
-      }
+      // if (self.animate) {
+      //   self.$aside.css({
+      //     backgroundPosition: `0 ${100 - Math.round(100 * scrollTop / ( $(document).height() - window.innerHeight ) )}%`
+      //   });
+      // }
 
-      if (scrollTop >= $('#projects').offset().top / 2) {
-        self.$anchors.each(function() {
+      // if (scrollTop >= $('#projects').offset().top / 2) {
+        self.$navigation.each(function() {
           const $this = $(this);
           const $target = $($this.attr('href'));
 
@@ -80,9 +81,9 @@ class App {
             $this.addClass('active');
           }
         });
-      } else {
-        self.$anchors.removeClass('active');
-      }
+      // } else {
+      //   self.$anchors.removeClass('active');
+      // }
     }).scroll();
 
     return this;
