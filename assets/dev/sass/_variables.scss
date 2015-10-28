@@ -1,7 +1,5 @@
 /* sizes */
 
-// height of navbar on mobile devices(xs -> lg:hidden)
-$xs-nav-height: 80px;
 
 // free space between top of the window and content in header and main
 $xs-padding-top: 3rem;
@@ -31,10 +29,13 @@ $yellow-orange: #65486F;
 $red-damask: #de703c;
 
 /* new layout colors */
-$font-color-primary: #696969;
+$background: #f5fafa;
+$font-color-primary: #888;
 $aside-background-color-primary: #212528;
 $aside-background-color-secondary: darken($aside-background-color-primary, 5%);
 $aside-font-color-primary: #999;
+$border-color: #e5e5e5;
+$footer-font-color-primary: #ccc;
 
 $main-color: #CC7450;
 

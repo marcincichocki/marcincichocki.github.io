@@ -2,14 +2,14 @@ form {
   input[type="text"],
   input[type="email"],
   textarea {
+    border-color: $border-color !important;
     &:focus {
-      border-color: $yellow-orange !important;
+      border-color: $main-color !important;
     }
   }
   label {
     display: none;
 
-    text-align: right;
     text-transform: capitalize;
   }
 }

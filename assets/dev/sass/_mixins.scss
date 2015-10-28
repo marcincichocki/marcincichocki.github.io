@@ -19,10 +19,20 @@
   }
 }
 
+@mixin anchor-footer {
+  a {
+    color: #fff;
+    border-bottom: 1px dotted;
+    &:hover {
+      text-decoration: none;
+      border-bottom-style: solid;
+    }
+  }
+}
+
 @mixin btn-outline {
-  border: 2px solid;
+  border: 2px solid #fff;
   &:hover {
-    border-color: #fff;
     background-color: #fff;
     color: #000 !important;
   }

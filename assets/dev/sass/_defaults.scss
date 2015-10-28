@@ -1,8 +1,8 @@
 body {
   font-family: "Lato", sans-serif;
 
-  color: #000;
-  background-color: $gallery;
+  background-color: $background;
+  color: $font-color-primary;
 }
 
 @include anchor-primary;

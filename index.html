@@ -61,16 +61,10 @@
           <!-- section#home -->
           <section class="row" id="home">
             <div class="col-xs-12">
-              <header class="row section-header">
-                <div class="jumbotron">
-                  <h1 class="display-3">Lorem ipsum</h1>
-                  <h1>Lorem ipsum dolor sit amet.</h1>
-                  <p class="lead">
-                    <a href="#projects" class="btn btn-mc-outline btn-lg anchor">Learn more</a>
-                    <a href="#contact" class="btn btn-mc-primary btn-lg anchor">Hire me</a>
-                  </p>
-                </div>
-              </header>
+              <h1 class="display-3">Lorem ipsum</h1>
+              <h1>Lorem ipsum dolor sit amet.</h1>
+              <a href="#projects" class="btn btn-mc-outline btn-lg anchor">Learn more</a>
+              <a href="#contact" class="btn btn-mc-primary btn-lg anchor">Hire me</a>
             </div>
           </section>
           <!-- section#projects -->
@@ -80,58 +74,34 @@
               <!-- .section-header -->
               <header class="row section-header">
                 <div class="col-xs-12">
-                  <small class="section-subtitle">my work</small>
                   <h1 class="section-title">projects</h1>
                 </div>
               </header>
 
               <!-- projects -->
               <section class="row section-content">
-                <article class="col-xs-12 project">
-                  <header class="row">
-                    <div class="col-xs-12">
-                      <h2 class="project-name">Pizza Builder</h2>
+                <div class="col-xs-12 col-sm-6">
+                  <article class="card">
+                    <img class="card-img-top img-responsive" src="assets/img/project1.png" alt="Card image cap">
+                    <div class="card-block">
+                      <h4 class="card-title">Lorem</h4>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a class="btn btn-block btn-mc-primary" href="#"><i class="icon icon-link"></i>&nbsp;demo</a>
+                      <a class="btn btn-block btn-mc-primary" href="#"><i class="icon icon-github"></i>&nbsp;source</a>
                     </div>
-                  </header>
-                  <section class="row">
-                    <div class="col-sm-5">
-                      <figure class="figure img-responsive">
-                        <img class="project-image img-rounded" src="assets/img/project1.png" alt="pizza builder main screen" title="pizza builder main screen">
-                        <figcaption class="figure-caption">Create your own pizza!</figcaption>
-                      </figure>
-                      <div class="project-buttons">
-                        <a class="btn btn-block btn-mc-primary" href="demo/pizza-builder/"><i class="icon icon-link"></i>&nbsp;demo</a>
-                        <a class="btn btn-block btn-mc-primary" href="https://github.com/marcincichocki/pizzaBuilderAngularJS"><i class="icon icon-github"></i>&nbsp;source</a>
-                      </div>
+                  </article>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <article class="card">
+                    <img class="card-img-top img-responsive" src="assets/img/project2.png" alt="Card image cap">
+                    <div class="card-block">
+                      <h4 class="card-title">Card title</h4>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a class="btn btn-block btn-mc-primary" href="#"><i class="icon icon-link"></i>&nbsp;demo</a>
+                      <a class="btn btn-block btn-mc-primary" href="#"><i class="icon icon-github"></i>&nbsp;source</a>
                     </div>
-                    <article class="col-sm-7 project-description">
-                      <p>This project uses <mark>AngularJS</mark></p>
-                    </article>
-                  </section>
-                </article>
-                <article class="col-xs-12 project">
-                  <header class="row">
-                    <div class="col-xs-12">
-                      <h2 class="project-name">Lorem</h2>
-                    </div>
-                  </header>
-                  <section class="row">
-                    <div class="col-sm-5">
-                      <figure class="figure img-responsive">
-                        <img class="project-image img-rounded" src="assets/img/project2.png" alt="pizza builder main screen" title="pizza builder main screen">
-                        <figcaption class="figure-caption">Lorem ipsum</figcaption>
-                      </figure>
-                      <div class="project-buttons">
-                        <a class="btn btn-block btn-mc-primary" href="#"><i class="icon icon-link"></i>&nbsp;demo</a>
-                        <a class="btn btn-block btn-mc-primary" href="#"><i class="icon icon-github"></i>&nbsp;source</a>
-                      </div>
-                    </div>
-                    <article class="col-sm-7 project-description">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus nobis consectetur, cum non necessitatibus obcaecati.</p>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias delectus enim sequi numquam excepturi, corrupti!</p>
-                    </article>
-                  </section>
-                </article>
+                  </article>
+                </div>
               </section>
               <footer class="row section-footer">
                 <div class="col-xs-12">
@@ -149,7 +119,6 @@
             <!-- section.section-header -->
               <header class="row section-header">
                 <div class="col-xs-12">
-                  <small class="section-subtitle">I've been using..</small>
                   <h1 class="section-title">skills</h1>
                 </div>
               </header>
@@ -187,7 +156,6 @@
             <div class="col-xs-12">
               <header class="row section-header">
                 <div class="col-xs-12">
-                  <small class="section-subtitle">have a question?</small>
                   <h1 class="section-title">contact</h1>
                 </div>
               </header>
@@ -195,35 +163,35 @@
               <section class="row section-content">
                 <div class="col-xs-12">
                   <form action="">
-                    <div class="form-group row">
-                      <label class="p-a-0 control-label col-sm-2" for="name">name</label>
+                    <fieldset class="form-group row">
+                      <label class="form-control-label col-sm-2" for="name">name</label>
                       <div class="col-sm-10">
                         <input class="form-control" name="name" tabindex="1" type="text" id="name" placeholder="Name">
                       </div>
-                    </div>
-                    <div class="form-group row">
-                      <label class="p-a-0 control-label col-sm-2" for="email">email</label>
+                    </fieldset>
+                    <fieldset class="form-group row">
+                      <label class="form-control-label col-sm-2" for="email">email</label>
                       <div class="col-sm-10">
                         <input class="form-control" name="email" tabindex="2" type="email" id="email" placeholder="Email">
                       </div>
-                    </div>
-                    <div class="form-group row">
-                      <label class="p-a-0 control-label col-sm-2" for="name">subject</label>
+                    </fieldset>
+                    <fieldset class="form-group row">
+                      <label class="form-control-label col-sm-2" for="subject">subject</label>
                       <div class="col-sm-10">
                         <input class="form-control" name="subject" tabindex="3" type="text" id="subject" placeholder="Subject">
                       </div>
-                    </div>
-                    <div class="form-group row">
-                      <label class="p-a-0 control-label col-sm-2" for="message">message</label>
+                    </fieldset>
+                    <fieldset class="form-group row">
+                      <label class="form-control-label col-sm-2" for="message">message</label>
                       <div class="col-sm-10">
                         <textarea class="form-control" name="message" tabindex="4" id="message" placeholder="Message"></textarea>
                       </div>
-                    </div>
-                    <div class="form-group row">
+                    </fieldset>
+                    <fieldset class="form-group row">
                       <div class="col-sm-offset-2 col-sm-10">
                         <input class="btn btn-mc-primary" tabindex="5" type="submit" value="Send">
                       </div>
-                    </div>
+                    </fieldset>
                   </form>
                 </div>
               </section>
@@ -234,22 +202,13 @@
           <!-- footer -->
           <footer class="row">
             <div class="col-xs-12">
-              <div class="row section-content">
-                <div class="col-sm-6">
-                  <h2>Lorem</h2>
-                  <address>
-                    <strong>Marcin Cichocki</strong><br>
-                    Lorem ipsum dolor sit amet<br>
-                    Lorem ipsum dolor sit amet<br>
-                    <a href="tel:#"><i class="icon icon-phone"></i>&nbsp;(48) 123-456-789</a><br>
-                    <a href="mailto:#"><i class="icon icon-mail"></i>&nbsp;example@marcincichocki.com</a>
-                  </address>
-                </div>
-                <div class="col-sm-6">
-                  <h2>Lorem</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus laboriosam expedita ipsam tenetur porro odit autem veritatis! Porro cumque architecto quo magni, voluptate ex repudiandae quod modi deleniti, esse asperiores.</p>
-                </div>
-              </div>
+              <address>
+                <strong>Marcin Cichocki</strong><br>
+                Lorem ipsum dolor sit amet<br>
+                Lorem ipsum dolor sit amet<br>
+                <a href="tel:#"><i class="icon icon-phone"></i>&nbsp;(48) 123-456-789</a><br>
+                <a href="mailto:#"><i class="icon icon-mail"></i>&nbsp;example@marcincichocki.com</a>
+              </address>
             </div>
           </footer>
         </main>
