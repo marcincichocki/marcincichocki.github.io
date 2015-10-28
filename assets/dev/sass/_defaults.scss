@@ -5,4 +5,8 @@ body {
   color: $font-color-primary;
 }
 
+#wrapper {
+  overflow-x: hidden;
+}
+
 @include anchor-primary;

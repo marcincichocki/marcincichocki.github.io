@@ -31,7 +31,8 @@ main {
 }
 
 body {
-  overflow-x: hidden;
+  // moved to #wrapper
+  // overflow-x: hidden;
   &.visible {
     aside {
       transform: translateX(0);
