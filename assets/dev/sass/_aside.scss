@@ -75,7 +75,7 @@ body {
       text-decoration: none;
 
       &:not(.active) {
-        color: $main-color;
+        color: $main-color-primary;
       }
     }
     &.active {

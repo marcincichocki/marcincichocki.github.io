@@ -18,8 +18,8 @@
 
   position: fixed;
   z-index: map-get($z-index, "menu-button");
-  left: 10px;
-  top: 10px;
+  right: 10px;
+  bottom: 10px;
 
   display: flex;
 
@@ -28,20 +28,18 @@
 
   color: #fff;
   border-radius: 50%;
-  background: $yellow-orange;
+  background: $main-color-primary;
   box-shadow: 0 3px 10px -3px #000;
 
   align-items: center;
   justify-content: center;
-  transition: $aside-transition;
   &:hover {
     text-decoration: none;
 
     color: #fff;
   }
   &.active {
-    background-color: $red-damask;
-    transform: translateX($xs-aside-width);
+    background-color: $main-color-secondary;
   }
   > .icon {
     font-size: 1em;

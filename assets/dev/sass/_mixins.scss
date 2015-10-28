@@ -4,7 +4,7 @@
 
     color: lighten($font-color-primary, 5%);
     &:hover {
-      color: $main-color;
+      color: $main-color-primary;
     }
   }
 }
@@ -39,10 +39,10 @@
 }
 
 @mixin btn-primary {
-  border: 2px solid $main-color;
-  background-color: $main-color;
+  border: 2px solid $main-color-primary;
+  background-color: $main-color-primary;
   &:hover {
-    border-color: darken($main-color, 10%);
-    background-color: darken($main-color, 10%);
+    border-color: $main-color-secondary;
+    background-color: $main-color-secondary;
   }
 }

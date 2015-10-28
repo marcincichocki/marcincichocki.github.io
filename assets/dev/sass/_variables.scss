@@ -1,14 +1,10 @@
 /* sizes */
 
 
-// free space between top of the window and content in header and main
+// free space between top of the window and content in aside and #home
 $xs-padding-top: 3rem;
 $xs-padding-bottom: 1rem;
 $lg-padding-top: 5rem;
-$lg-padding-bottom: 0rem;
-
-// font size of carousel
-$carousel-font-size: 1.5rem;
 
 // sections padding(left and right)
 // in fact its for rows inside sections:
@@ -19,14 +15,6 @@ $lg-section-padding: 3rem;
 
 $xs-aside-width: 70vw;
 
-/* colors */
-$gallery: #efefef;
-$silver-chalice: #aaa;
-$ebony-clay: #2f3c4f;
-$bismark: #506f86;
-/* $yellow-orange: #fbb040; */
-$yellow-orange: #65486F;
-$red-damask: #de703c;
 
 /* new layout colors */
 $background: #f5fafa;
@@ -37,11 +25,8 @@ $aside-font-color-primary: #999;
 $border-color: #e5e5e5;
 $footer-font-color-primary: #ccc;
 
-$main-color: #de703c;
-
-
-$anchor-secondary-border: 1px dotted;
-$anchor-secondary-border-hover: 1px solid;
+$main-color-primary: #de703c;
+$main-color-secondary: darken($main-color-primary, 20%);
 
 
 $aside-transition: transform .3s ease-in-out;

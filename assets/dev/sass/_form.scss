@@ -4,7 +4,7 @@ form {
   textarea {
     border-color: $border-color !important;
     &:focus {
-      border-color: $main-color !important;
+      border-color: $main-color-primary !important;
     }
   }
   label {
