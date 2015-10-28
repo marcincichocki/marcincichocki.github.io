@@ -37,7 +37,7 @@ $aside-font-color-primary: #999;
 $border-color: #e5e5e5;
 $footer-font-color-primary: #ccc;
 
-$main-color: #CC7450;
+$main-color: #de703c;
 
 
 $anchor-secondary-border: 1px dotted;
@@ -45,6 +45,15 @@ $anchor-secondary-border-hover: 1px solid;
 
 
 $aside-transition: transform .3s ease-in-out;
+
+
+
+$pseudo-elements:
+  "::-webkit-input-placeholder",
+  ":-moz-placeholder",
+  "::-moz-placeholder",
+  ":-ms-input-placeholder";
+
 /* maps */
 
 // z-index map
