@@ -11,7 +11,7 @@
 
     display: inline;
 
-    animation: .3s show;
+    animation: .3s carousel-show;
     white-space: nowrap;
   }
   &:empty::before {
@@ -29,14 +29,5 @@
     display: inline-block;
 
     margin: 0;
-  }
-}
-
-@keyframes show {
-  from {
-    bottom: -100%;
-  }
-  to {
-    bottom: 0;
   }
 }
