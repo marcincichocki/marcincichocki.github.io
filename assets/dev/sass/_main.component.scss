@@ -27,7 +27,7 @@ main {
     color: $footer-font-color-primary;
     background-image:
       linear-gradient(0deg, #000, transparent),
-      url("../img/bgtest.jpg");
+      url("../img/background.jpg");
     background-position: bottom;
 
     @include anchor-footer;
