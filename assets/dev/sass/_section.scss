@@ -1,14 +1,10 @@
-.section-header,
-.section-content,
-.section-footer {
-  padding: $xs-section-padding;
-}
-
-.section-header {
-  text-align: center;
+.section-row {
+  padding-right: $xs-section-padding;
+  padding-left: $xs-section-padding;
 }
 
 .section-title {
+  text-align: center;
   font-size: 3rem;
   font-weight: bold;
 
