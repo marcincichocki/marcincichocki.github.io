@@ -1,0 +1,89 @@
+main {
+  /* main header */
+  > header {
+    height: 100vh;
+    padding-top: $xs-padding-top;
+
+    text-align: center;
+
+    color: #fff;
+    background: url("../img/bgtest.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* main footer */
+  > footer {
+    margin-top: 100px;
+    padding: 50px 0;
+
+    text-align: center;
+
+    color: $footer-font-color-primary;
+    background-image:
+      linear-gradient(0deg, #000, transparent),
+      url("../img/bgtest.jpg");
+    background-position: bottom;
+
+    @include anchor-footer;
+  }
+}
+
+/* styles for main section */
+.section-row {
+  padding-right: $xs-section-padding;
+  padding-left: $xs-section-padding;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+
+  text-transform: capitalize;
+
+  color: darken($font-color-primary, 10%);
+}
+
+.section-footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+  background-color: #fff;
+}
+
+
+/* contact form */
+form {
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    border-color: $border-color !important;
+    &:focus {
+      border-color: $main-color-primary !important;
+    }
+  }
+  label {
+    // don't show labels on small screen
+    display: none;
+
+    text-transform: capitalize;
+  }
+}
+
+
+/* svg icons */
+.icon-svg-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3rem;
+  }
+}
