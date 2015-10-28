@@ -13,6 +13,14 @@ $lg-padding-top: 5rem;
 $xs-section-padding: 1rem;
 $lg-section-padding: 3rem;
 
+// section margin-top(space between sections)
+$section-margin-top: 4rem;
+
+
+// TODO: fixed width with @media
+// Why? On Tablets and other long devices, but smaller
+// then 992px, aside is just o big, where there is no
+// content to cover it
 $xs-aside-width: 70vw;
 
 
