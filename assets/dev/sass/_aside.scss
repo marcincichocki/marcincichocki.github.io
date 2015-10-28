@@ -33,7 +33,7 @@ main {
 body {
   // moved to #wrapper
   // overflow-x: hidden;
-  &.visible {
+  &.aside-visible {
     aside {
       transform: translateX(0);
     }

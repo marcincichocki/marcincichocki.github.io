@@ -41,8 +41,7 @@ class App {
 
 
     $(window).on('resize', () => {
-      self
-        .toggleAnimation();
+      self.toggleAnimation();
     });
 
     self.$anchors.on('click', function(event) {
@@ -59,31 +58,22 @@ class App {
       event.preventDefault();
 
       $(this).toggleClass('active').children().toggleClass('hidden');
-      $('body').toggleClass('visible');
+      $('body').toggleClass('aside-visible');
     });
 
     $(window).on('scroll', function() {
       const scrollTop = $(document).scrollTop();
 
-      // if (self.animate) {
-      //   self.$aside.css({
-      //     backgroundPosition: `0 ${100 - Math.round(100 * scrollTop / ( $(document).height() - window.innerHeight ) )}%`
-      //   });
-      // }
+      self.$navigation.each(function() {
+        const $this = $(this);
+        const $target = $($this.attr('href'));
 
-      // if (scrollTop >= $('#projects').offset().top / 2) {
-        self.$navigation.each(function() {
-          const $this = $(this);
-          const $target = $($this.attr('href'));
+        if ($target.offset().top <= scrollTop + window.innerHeight / 2) {
+          $('nav a.active').removeClass('active');
+          $this.addClass('active');
+        }
+      });
 
-          if ($target.offset().top <= scrollTop + window.innerHeight / 2) {
-            $('nav a.active').removeClass('active');
-            $this.addClass('active');
-          }
-        });
-      // } else {
-      //   self.$anchors.removeClass('active');
-      // }
     }).scroll();
 
     return this;
