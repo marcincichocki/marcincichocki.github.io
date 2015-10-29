@@ -61,21 +61,19 @@ main {
 
 
 /* contact form */
-form {
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    border-color: $border-color !important;
-    &:focus {
-      border-color: $main-color-primary !important;
-    }
+input[type="text"],
+input[type="email"],
+textarea {
+  border-color: $border-color !important;
+  &:focus {
+    border-color: $main-color-primary !important;
   }
-  label {
-    // don't show labels on small screen
-    display: none;
+}
+label {
+  // don't show labels on small screen
+  display: none;
 
-    text-transform: capitalize;
-  }
+  text-transform: capitalize;
 }
 
 
