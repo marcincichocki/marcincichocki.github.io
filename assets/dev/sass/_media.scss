@@ -3,10 +3,8 @@
 
 // sm 34rem 544px
 @media (min-width: 34rem) {
-  form {
-    label {
-      display: block;
-    }
+  label {
+    display: block;
   }
 
   @each $element in $pseudo-elements {
@@ -20,20 +18,16 @@
 @media (min-width: 62rem) {
   aside {
     padding-top: $lg-padding-top;
-
-    transform: none;
   }
 
-  #home {
-    padding-top: $lg-padding-top;
+  main {
+    > header {
+      padding-top: $lg-padding-top;
+    }
   }
 
   .website-subtitle {
     font-size: 1.1rem;
-  }
-
-  .external-links {
-    margin-bottom: 10px;
   }
 
   .section-row {
