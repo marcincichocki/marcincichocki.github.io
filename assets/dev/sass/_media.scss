@@ -1,3 +1,22 @@
+// more than:
+
+
+// sm 34rem 544px
+@media (min-width: 34rem) {
+  form {
+    label {
+      display: block;
+    }
+  }
+
+  @each $element in $pseudo-elements {
+    #{$element} {
+      color: transparent !important;
+    }
+  }
+}
+
+// lg 62rem 992px
 @media (min-width: 62rem) {
   aside {
     padding-top: $lg-padding-top;
@@ -23,22 +42,53 @@
   }
 }
 
+// xl 75rem 1200px
 @media (min-width: 75rem) {
   .website-subtitle {
     font-size: 1.5rem;
   }
 }
 
-@media (min-width: 34rem) {
-  form {
-    label {
-      display: block;
-    }
+
+
+// less than:
+
+
+// lg 62rem 992px
+@media (max-width: 61.9rem) {
+  aside,
+  main {
+    transition: $aside-transition;
   }
 
-  @each $element in $pseudo-elements {
-    #{$element} {
-      color: transparent !important;
+  aside {
+    width: $sm-aside-width;
+    transform: translateX(-$sm-aside-width);
+  }
+
+  body {
+    &.aside-visible {
+      aside {
+        transform: translateX(0);
+      }
+      main {
+        transform: translateX($sm-aside-width);
+      }
+    }
+  }
+}
+
+// sm 34rem 554px
+@media (max-width: 33.9em) {
+  aside {
+    width: $xs-aside-width;
+    transform: translateX(-$xs-aside-width);
+  }
+  body {
+    &.aside-visible {
+      main {
+        transform: translateX($xs-aside-width);
+      }
     }
   }
 }
