@@ -19,6 +19,9 @@ aside {
 
   backface-visibility: hidden;
   justify-content: space-between;
+  > header {
+    color: #fff;
+  }
   > footer {
     @include anchor-secondary;
   }
@@ -31,8 +34,6 @@ aside {
 
 .website-title {
   text-transform: capitalize;
-
-  color: #fff;
 }
 
 .website-subtitle {
